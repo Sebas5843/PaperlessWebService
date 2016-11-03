@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ax21="http://webservices.online.webapp.paperless.cl/xsd" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns="http://webservices.online.webapp.paperless.cl" xmlns:ns1="http://org.apache.axis2/xsd" targetNamespace="http://webservices.online.webapp.paperless.cl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>Online</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema xmlns:ax22="http://webservices.online.webapp.paperless.cl/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://webservices.online.webapp.paperless.cl">
+      <xs:import namespace="http://webservices.online.webapp.paperless.cl/xsd" />
+      <xs:element name="OnlineGenerationDteCT">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args4" type="xs:int" />
+            <xs:element minOccurs="0" name="args5" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineGenerationDteCTResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ax22:OnlineResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineRecoveryRecList">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineRecoveryRecListResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineGenerationBolCT">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args4" type="xs:int" />
+            <xs:element minOccurs="0" name="args5" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineGenerationBolCTResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ax22:OnlineResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ConsultCT">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ConsultCTResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ax22:OnlineResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Consult">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ConsultResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineRecovery">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" type="xs:int" />
+            <xs:element minOccurs="0" name="args4" type="xs:long" />
+            <xs:element minOccurs="0" name="args5" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineRecoveryResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineRecoveryCT">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" type="xs:int" />
+            <xs:element minOccurs="0" name="args4" type="xs:long" />
+            <xs:element minOccurs="0" name="args5" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineRecoveryCTResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ax22:OnlineResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineRecoveryRec">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" type="xs:int" />
+            <xs:element minOccurs="0" name="args4" type="xs:int" />
+            <xs:element minOccurs="0" name="args5" type="xs:long" />
+            <xs:element minOccurs="0" name="args6" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineRecoveryRecResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineRecoveryRecCT">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" type="xs:int" />
+            <xs:element minOccurs="0" name="args4" type="xs:int" />
+            <xs:element minOccurs="0" name="args5" type="xs:long" />
+            <xs:element minOccurs="0" name="args6" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineRecoveryRecCTResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ax22:OnlineResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineGeneration">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args4" type="xs:int" />
+            <xs:element minOccurs="0" name="args5" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineGenerationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineGenerationCT">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args4" type="xs:int" />
+            <xs:element minOccurs="0" name="args5" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineGenerationCTResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ax22:OnlineResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineGenerationDte">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args4" type="xs:int" />
+            <xs:element minOccurs="0" name="args5" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineGenerationDteResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineGenerationBol">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args4" type="xs:int" />
+            <xs:element minOccurs="0" name="args5" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineGenerationBolResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="BusinessReply">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="args3" type="xs:int" />
+            <xs:element minOccurs="0" name="args4" type="xs:int" />
+            <xs:element minOccurs="0" name="args5" type="xs:long" />
+            <xs:element minOccurs="0" name="args6" type="xs:int" />
+            <xs:element minOccurs="0" name="args7" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="BusinessReplyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://webservices.online.webapp.paperless.cl/xsd">
+      <xs:complexType name="OnlineResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="causa" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="numero_folio" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="OnlineGenerationDteCTRequest">
+    <wsdl:part name="parameters" element="ns:OnlineGenerationDteCT" />
+  </wsdl:message>
+  <wsdl:message name="OnlineGenerationDteCTResponse">
+    <wsdl:part name="parameters" element="ns:OnlineGenerationDteCTResponse" />
+  </wsdl:message>
+  <wsdl:message name="OnlineGenerationBolRequest">
+    <wsdl:part name="parameters" element="ns:OnlineGenerationBol" />
+  </wsdl:message>
+  <wsdl:message name="OnlineGenerationBolResponse">
+    <wsdl:part name="parameters" element="ns:OnlineGenerationBolResponse" />
+  </wsdl:message>
+  <wsdl:message name="BusinessReplyRequest">
+    <wsdl:part name="parameters" element="ns:BusinessReply" />
+  </wsdl:message>
+  <wsdl:message name="BusinessReplyResponse">
+    <wsdl:part name="parameters" element="ns:BusinessReplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultCTRequest">
+    <wsdl:part name="parameters" element="ns:ConsultCT" />
+  </wsdl:message>
+  <wsdl:message name="ConsultCTResponse">
+    <wsdl:part name="parameters" element="ns:ConsultCTResponse" />
+  </wsdl:message>
+  <wsdl:message name="OnlineGenerationCTRequest">
+    <wsdl:part name="parameters" element="ns:OnlineGenerationCT" />
+  </wsdl:message>
+  <wsdl:message name="OnlineGenerationCTResponse">
+    <wsdl:part name="parameters" element="ns:OnlineGenerationCTResponse" />
+  </wsdl:message>
+  <wsdl:message name="OnlineRecoveryRecCTRequest">
+    <wsdl:part name="parameters" element="ns:OnlineRecoveryRecCT" />
+  </wsdl:message>
+  <wsdl:message name="OnlineRecoveryRecCTResponse">
+    <wsdl:part name="parameters" element="ns:OnlineRecoveryRecCTResponse" />
+  </wsdl:message>
+  <wsdl:message name="OnlineGenerationDteRequest">
+    <wsdl:part name="parameters" element="ns:OnlineGenerationDte" />
+  </wsdl:message>
+  <wsdl:message name="OnlineGenerationDteResponse">
+    <wsdl:part name="parameters" element="ns:OnlineGenerationDteResponse" />
+  </wsdl:message>
+  <wsdl:message name="OnlineRecoveryCTRequest">
+    <wsdl:part name="parameters" element="ns:OnlineRecoveryCT" />
+  </wsdl:message>
+  <wsdl:message name="OnlineRecoveryCTResponse">
+    <wsdl:part name="parameters" element="ns:OnlineRecoveryCTResponse" />
+  </wsdl:message>
+  <wsdl:message name="OnlineRecoveryRequest">
+    <wsdl:part name="parameters" element="ns:OnlineRecovery" />
+  </wsdl:message>
+  <wsdl:message name="OnlineRecoveryResponse">
+    <wsdl:part name="parameters" element="ns:OnlineRecoveryResponse" />
+  </wsdl:message>
+  <wsdl:message name="OnlineRecoveryRecRequest">
+    <wsdl:part name="parameters" element="ns:OnlineRecoveryRec" />
+  </wsdl:message>
+  <wsdl:message name="OnlineRecoveryRecResponse">
+    <wsdl:part name="parameters" element="ns:OnlineRecoveryRecResponse" />
+  </wsdl:message>
+  <wsdl:message name="OnlineGenerationBolCTRequest">
+    <wsdl:part name="parameters" element="ns:OnlineGenerationBolCT" />
+  </wsdl:message>
+  <wsdl:message name="OnlineGenerationBolCTResponse">
+    <wsdl:part name="parameters" element="ns:OnlineGenerationBolCTResponse" />
+  </wsdl:message>
+  <wsdl:message name="OnlineRecoveryRecListRequest">
+    <wsdl:part name="parameters" element="ns:OnlineRecoveryRecList" />
+  </wsdl:message>
+  <wsdl:message name="OnlineRecoveryRecListResponse">
+    <wsdl:part name="parameters" element="ns:OnlineRecoveryRecListResponse" />
+  </wsdl:message>
+  <wsdl:message name="OnlineGenerationRequest">
+    <wsdl:part name="parameters" element="ns:OnlineGeneration" />
+  </wsdl:message>
+  <wsdl:message name="OnlineGenerationResponse">
+    <wsdl:part name="parameters" element="ns:OnlineGenerationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultRequest">
+    <wsdl:part name="parameters" element="ns:Consult" />
+  </wsdl:message>
+  <wsdl:message name="ConsultResponse">
+    <wsdl:part name="parameters" element="ns:ConsultResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OnlinePortType">
+    <wsdl:operation name="OnlineGenerationDteCT">
+      <wsdl:input wsaw:Action="urn:OnlineGenerationDteCT" message="ns:OnlineGenerationDteCTRequest" />
+      <wsdl:output wsaw:Action="urn:OnlineGenerationDteCTResponse" message="ns:OnlineGenerationDteCTResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationBol">
+      <wsdl:input wsaw:Action="urn:OnlineGenerationBol" message="ns:OnlineGenerationBolRequest" />
+      <wsdl:output wsaw:Action="urn:OnlineGenerationBolResponse" message="ns:OnlineGenerationBolResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="BusinessReply">
+      <wsdl:input wsaw:Action="urn:BusinessReply" message="ns:BusinessReplyRequest" />
+      <wsdl:output wsaw:Action="urn:BusinessReplyResponse" message="ns:BusinessReplyResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultCT">
+      <wsdl:input wsaw:Action="urn:ConsultCT" message="ns:ConsultCTRequest" />
+      <wsdl:output wsaw:Action="urn:ConsultCTResponse" message="ns:ConsultCTResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationCT">
+      <wsdl:input wsaw:Action="urn:OnlineGenerationCT" message="ns:OnlineGenerationCTRequest" />
+      <wsdl:output wsaw:Action="urn:OnlineGenerationCTResponse" message="ns:OnlineGenerationCTResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryRecCT">
+      <wsdl:input wsaw:Action="urn:OnlineRecoveryRecCT" message="ns:OnlineRecoveryRecCTRequest" />
+      <wsdl:output wsaw:Action="urn:OnlineRecoveryRecCTResponse" message="ns:OnlineRecoveryRecCTResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationDte">
+      <wsdl:input wsaw:Action="urn:OnlineGenerationDte" message="ns:OnlineGenerationDteRequest" />
+      <wsdl:output wsaw:Action="urn:OnlineGenerationDteResponse" message="ns:OnlineGenerationDteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryCT">
+      <wsdl:input wsaw:Action="urn:OnlineRecoveryCT" message="ns:OnlineRecoveryCTRequest" />
+      <wsdl:output wsaw:Action="urn:OnlineRecoveryCTResponse" message="ns:OnlineRecoveryCTResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecovery">
+      <wsdl:input wsaw:Action="urn:OnlineRecovery" message="ns:OnlineRecoveryRequest" />
+      <wsdl:output wsaw:Action="urn:OnlineRecoveryResponse" message="ns:OnlineRecoveryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryRec">
+      <wsdl:input wsaw:Action="urn:OnlineRecoveryRec" message="ns:OnlineRecoveryRecRequest" />
+      <wsdl:output wsaw:Action="urn:OnlineRecoveryRecResponse" message="ns:OnlineRecoveryRecResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationBolCT">
+      <wsdl:input wsaw:Action="urn:OnlineGenerationBolCT" message="ns:OnlineGenerationBolCTRequest" />
+      <wsdl:output wsaw:Action="urn:OnlineGenerationBolCTResponse" message="ns:OnlineGenerationBolCTResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryRecList">
+      <wsdl:input wsaw:Action="urn:OnlineRecoveryRecList" message="ns:OnlineRecoveryRecListRequest" />
+      <wsdl:output wsaw:Action="urn:OnlineRecoveryRecListResponse" message="ns:OnlineRecoveryRecListResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGeneration">
+      <wsdl:input wsaw:Action="urn:OnlineGeneration" message="ns:OnlineGenerationRequest" />
+      <wsdl:output wsaw:Action="urn:OnlineGenerationResponse" message="ns:OnlineGenerationResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Consult">
+      <wsdl:input wsaw:Action="urn:Consult" message="ns:ConsultRequest" />
+      <wsdl:output wsaw:Action="urn:ConsultResponse" message="ns:ConsultResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OnlineSoap11Binding" type="ns:OnlinePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OnlineGenerationDteCT">
+      <soap:operation soapAction="urn:OnlineGenerationDteCT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationBol">
+      <soap:operation soapAction="urn:OnlineGenerationBol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusinessReply">
+      <soap:operation soapAction="urn:BusinessReply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultCT">
+      <soap:operation soapAction="urn:ConsultCT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationCT">
+      <soap:operation soapAction="urn:OnlineGenerationCT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryRecCT">
+      <soap:operation soapAction="urn:OnlineRecoveryRecCT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationDte">
+      <soap:operation soapAction="urn:OnlineGenerationDte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryCT">
+      <soap:operation soapAction="urn:OnlineRecoveryCT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecovery">
+      <soap:operation soapAction="urn:OnlineRecovery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationBolCT">
+      <soap:operation soapAction="urn:OnlineGenerationBolCT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryRec">
+      <soap:operation soapAction="urn:OnlineRecoveryRec" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryRecList">
+      <soap:operation soapAction="urn:OnlineRecoveryRecList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consult">
+      <soap:operation soapAction="urn:Consult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGeneration">
+      <soap:operation soapAction="urn:OnlineGeneration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OnlineSoap12Binding" type="ns:OnlinePortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OnlineGenerationDteCT">
+      <soap12:operation soapAction="urn:OnlineGenerationDteCT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationBol">
+      <soap12:operation soapAction="urn:OnlineGenerationBol" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusinessReply">
+      <soap12:operation soapAction="urn:BusinessReply" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultCT">
+      <soap12:operation soapAction="urn:ConsultCT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationCT">
+      <soap12:operation soapAction="urn:OnlineGenerationCT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryRecCT">
+      <soap12:operation soapAction="urn:OnlineRecoveryRecCT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationDte">
+      <soap12:operation soapAction="urn:OnlineGenerationDte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryCT">
+      <soap12:operation soapAction="urn:OnlineRecoveryCT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecovery">
+      <soap12:operation soapAction="urn:OnlineRecovery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationBolCT">
+      <soap12:operation soapAction="urn:OnlineGenerationBolCT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryRec">
+      <soap12:operation soapAction="urn:OnlineRecoveryRec" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryRecList">
+      <soap12:operation soapAction="urn:OnlineRecoveryRecList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consult">
+      <soap12:operation soapAction="urn:Consult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGeneration">
+      <soap12:operation soapAction="urn:OnlineGeneration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OnlineHttpBinding" type="ns:OnlinePortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="OnlineGenerationDteCT">
+      <http:operation location="Online/OnlineGenerationDteCT" />
+      <wsdl:input>
+        <mime:content part="OnlineGenerationDteCT" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="OnlineGenerationDteCT" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationBol">
+      <http:operation location="Online/OnlineGenerationBol" />
+      <wsdl:input>
+        <mime:content part="OnlineGenerationBol" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="OnlineGenerationBol" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusinessReply">
+      <http:operation location="Online/BusinessReply" />
+      <wsdl:input>
+        <mime:content part="BusinessReply" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="BusinessReply" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultCT">
+      <http:operation location="Online/ConsultCT" />
+      <wsdl:input>
+        <mime:content part="ConsultCT" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="ConsultCT" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationCT">
+      <http:operation location="Online/OnlineGenerationCT" />
+      <wsdl:input>
+        <mime:content part="OnlineGenerationCT" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="OnlineGenerationCT" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryRecCT">
+      <http:operation location="Online/OnlineRecoveryRecCT" />
+      <wsdl:input>
+        <mime:content part="OnlineRecoveryRecCT" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="OnlineRecoveryRecCT" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationDte">
+      <http:operation location="Online/OnlineGenerationDte" />
+      <wsdl:input>
+        <mime:content part="OnlineGenerationDte" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="OnlineGenerationDte" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryCT">
+      <http:operation location="Online/OnlineRecoveryCT" />
+      <wsdl:input>
+        <mime:content part="OnlineRecoveryCT" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="OnlineRecoveryCT" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecovery">
+      <http:operation location="Online/OnlineRecovery" />
+      <wsdl:input>
+        <mime:content part="OnlineRecovery" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="OnlineRecovery" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGenerationBolCT">
+      <http:operation location="Online/OnlineGenerationBolCT" />
+      <wsdl:input>
+        <mime:content part="OnlineGenerationBolCT" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="OnlineGenerationBolCT" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryRec">
+      <http:operation location="Online/OnlineRecoveryRec" />
+      <wsdl:input>
+        <mime:content part="OnlineRecoveryRec" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="OnlineRecoveryRec" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineRecoveryRecList">
+      <http:operation location="Online/OnlineRecoveryRecList" />
+      <wsdl:input>
+        <mime:content part="OnlineRecoveryRecList" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="OnlineRecoveryRecList" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consult">
+      <http:operation location="Online/Consult" />
+      <wsdl:input>
+        <mime:content part="Consult" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Consult" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineGeneration">
+      <http:operation location="Online/OnlineGeneration" />
+      <wsdl:input>
+        <mime:content part="OnlineGeneration" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="OnlineGeneration" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Online">
+    <wsdl:port name="OnlineHttpSoap11Endpoint" binding="ns:OnlineSoap11Binding">
+      <soap:address location="http://200.185.71.177:8081/axis2/services/Online.OnlineHttpSoap11Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="OnlineHttpSoap12Endpoint" binding="ns:OnlineSoap12Binding">
+      <soap12:address location="http://200.185.71.177:8081/axis2/services/Online.OnlineHttpSoap12Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="OnlineHttpEndpoint" binding="ns:OnlineHttpBinding">
+      <http:address location="http://200.185.71.177:8081/axis2/services/Online.OnlineHttpEndpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
